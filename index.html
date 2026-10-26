@@ -1,439 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="styles/css/style.css" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="icon" href="assets/img/portofolio-logo.png">
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f9ff" />
+  <meta name="description" content="Portfolio of Habibunayka Miftah Al-Rizqi — Software Engineering student interested in web development and programming." />
+  <title>Habibunayka Miftah Al-Rizqi — Portfolio</title>
+  <link rel="icon" href="assets/img/portofolio-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/css/style.css" />
+</head>
+<body>
+  <div class="page-orb page-orb--one" aria-hidden="true"></div>
+  <div class="page-orb page-orb--two" aria-hidden="true"></div>
 
-    <body>
-        <div class="background-main">
-            <div class="background-second-1"></div>
-            <div class="background-second-2"></div>
-            <div class="background-second-3"></div>
+  <header class="site-header" id="header">
+    <div class="nav-shell container">
+      <a class="brand" href="#home" aria-label="Habibunayka home">
+        <span class="brand-mark">H<span>.</span></span>
+        <span class="brand-name">habibunayka<span> / portfolio</span></span>
+      </a>
+      <button class="menu-toggle" id="hamburger" type="button" aria-label="Open navigation" aria-controls="nav-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="nav-menu" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a class="nav-contact" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow"><span class="status-dot"></span> SOFTWARE ENGINEERING STUDENT</div>
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1>Habibunayka<br /><span>Miftah Al-Rizqi.</span></h1>
+          <p class="hero-lead">I’m learning to turn ideas into <span>useful digital experiences</span> through web development and programming.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a>
+            <a class="button button-quiet" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-socials" aria-label="Social links">
+            <span>FIND ME ON</span>
+            <a href="https://github.com/habibunayka" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 6v-3.9a3.4 3.4 0 0 0-.9-2.7c3-.3 6.2-1.5 6.2-6.8a5.3 5.3 0 0 0-1.4-3.7 4.9 4.9 0 0 0-.1-3.7s-1.2-.4-3.8 1.4a13.1 13.1 0 0 0-6.9 0C5.5.8 4.3 1.2 4.3 1.2a4.9 4.9 0 0 0-.1 3.7 5.3 5.3 0 0 0-1.4 3.7c0 5.3 3.2 6.5 6.2 6.8a3.4 3.4 0 0 0-.9 2.7V22"/></svg>
+            </a>
+            <a href="https://wa.me/6281384249677" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.8a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.3-4.9a8.4 8.4 0 1 1 16.2-3.8Z"/><path d="M8.2 7.7c.2-.5.5-.5.8-.5h.6c.2 0 .4.1.5.4l.8 1.9c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4 0 .7.5.9 1.2 1.6 2.1 2.1.3.2.5.2.7 0l.8-.9c.2-.2.4-.2.6-.1l1.8.9c.3.1.4.3.4.5 0 .3-.2 1.2-.8 1.7-.5.5-1.2.7-1.8.6-.6-.1-2.5-.7-4.2-2.3-1.4-1.3-2.3-2.9-2.5-3.5-.2-.7 0-1.9.5-2.8Z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/habib.yet" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+            </a>
+          </div>
         </div>
-        <header id="header">
-            <div class="container">
-                <a href="#">
-                    <h1 id="typing-effect">
-                        <span class="letter">M</span>
-                        <span class="letter">y</span>
-                        <span class="letter">&nbsp;</span>
-                        <span class="letter">P</span>
-                        <span class="letter">o</span>
-                        <span class="letter">r</span>
-                        <span class="letter">t</span>
-                        <span class="letter">f</span>
-                        <span class="letter">o</span>
-                        <span class="letter">l</span>
-                        <span class="letter">i</span>
-                        <span class="letter">o</span>
-                    </h1>
-                </a>
-                <div class="hamburger" id="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#project">Project</a></li>
-                        <li><a href="#skill">Skill</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li>
-                            <a href="#contact" class="contact-btn"
-                                >Contact Me</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#skill">Skill</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact" class="contact-btn">Contact Me</a></li>
-            </ul>
-        </nav>
-        <main>
-            <div class="profile">
-                <img src="assets/img/Habibunayka.png" alt="Profile Picture" />
-                <h2>Hello, I am</h2>
-                <h1>Habibunayka Miftah Al-Rizqi</h1>
-                <p>Student of SMKN 1 Cibinong</p>
-                <div class="social-icons">
-                    <a href="https://wa.me/6281384249677" target="_blank"
-                        ><img src="assets/icon/wa.png" alt="WhatsApp"
-                    /></a>
-                    <a href="https://github.com/habibunayka" target="_blank"
-                        ><img src="assets/icon/gh.png" alt="GitHub"
-                    /></a>
-                    <a
-                        href="https://www.instagram.com/habib.yet"
-                        target="_blank"
-                        ><img src="assets/icon/ig.png" alt="Instagram"
-                    /></a>
-                </div>
-                <div class="arrow" id="scrollArrow"></div>
-            </div>
+        <div class="hero-visual reveal" aria-label="Profile portrait">
+          <div class="portrait-ring portrait-ring--outer"></div>
+          <div class="portrait-ring portrait-ring--inner"></div>
+          <div class="portrait-card">
+            <div class="portrait-topline"><span>PERSONAL PROFILE</span><span class="tiny-dot"></span></div>
+            <div class="portrait-frame"><img src="assets/img/Habibunayka.png" alt="Portrait of Habibunayka Miftah Al-Rizqi" fetchpriority="high" /></div>
+            <div class="portrait-caption"><div><span class="caption-label">CURRENTLY AT</span><strong>SMKN 1 Cibinong</strong></div><span class="portrait-number">01 / 05</span></div>
+          </div>
+          <div class="floating-note floating-note--code"><span class="note-icon">&lt;/&gt;</span><div><strong>Curious by nature</strong><small>Always learning, always building.</small></div></div>
+          <div class="floating-note floating-note--location"><span class="location-dot"></span><span>Based in Indonesia</span></div>
+          <span class="visual-spark spark-one" aria-hidden="true">✳</span><span class="visual-spark spark-two" aria-hidden="true">✳</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about"><span></span> SCROLL TO EXPLORE</a>
+    </section>
 
-            <div class="about" id="about">
-                <!-- <div class="line"></div>
-                <div class="line line2"></div> -->
-                <div class="floating floating-1"></div>
-                <div class="floating floating-2"></div>
-                <div class="floating floating-3"></div>
-                <div class="floating floating-4"></div>
-                <div class="about-header">
-                    <h1 class="about-title">About me</h1>
-                    <div class="about-strip"></div>
-                </div>
-                <div class="about-body">
-                    <div class="about-photo">
-                        <div class="about-photo-desc">
-                            This is my favorite anime character named Mahiru
-                            Shiina
-                        </div>
-                        <img src="./assets/img/Mahiru.jfif" alt="" />
-                    </div>
-                    <div class="about-card">
-                        <p class="about-desc">
-                            I’m <b>Habibunayka Miftah Al-Rizqi</b>, a student in
-                            the Software Engineering (RPL) program at SMKN 1
-                            Cibinong. I’m passionate about web development and
-                            programming, with skills in PHP, JavaScript, and
-                            some framework like Laravel, and React. I’m
-                            committed to continuous learning and enjoy working
-                            on tech projects. In my free time, I love reading
-                            manga and manhwa, which inspire my creativity and
-                            problem-solving skills.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="project" id="project">
-                <div class="project-header">
-                    <h1 class="project-title">My Project</h1>
-                    <div class="project-strip"></div>
-                </div>
-                <div class="project-body">
-                    <div
-                        class="project-item"
-                        data-url="./project/project-1-details.html"
-                    >
-                        <img
-                            src="./project/img/not-found.png"
-                            class="project-image"
-                            alt="Project Image"
-                        />
-                        <div class="project-info">
-                            <h3 class="title">Project No. 1</h3>
-                            <p class="desc">This is project description.</p>
-                        </div>
-                    </div>
-                    <div class="project-item" data-url="">
-                        <img
-                            src="./project/img/not-found.png"
-                            class="project-image"
-                            alt="Project Image"
-                        />
-                        <div class="project-info">
-                            <h3 class="title">Project No. 2</h3>
-                            <p class="desc">This is project description.</p>
-                        </div>
-                    </div>
-                    <div class="project-item" data-url="">
-                        <img
-                            src="./project/img/not-found.png"
-                            class="project-image"
-                            alt="Project Image"
-                        />
-                        <div class="project-info">
-                            <h3 class="title">Project No. 3</h3>
-                            <p class="desc">This is project description.</p>
-                        </div>
-                    </div>
-                    <div class="project-item" data-url="">
-                        <img
-                            src="./project/img/not-found.png"
-                            class="project-image"
-                            alt="Project Image"
-                        />
-                        <div class="project-info">
-                            <h3 class="title">Project No. 4</h3>
-                            <p class="desc">
-                                This is another project description.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <section class="section section-about" id="about">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-kicker">A LITTLE INTRODUCTION</span><h2>More than just<br /><span>lines of code.</span></h2><p>Getting to know the person behind the screen.</p></div>
+        <div class="about-grid">
+          <div class="about-art reveal">
+            <div class="about-art-card"><div class="art-top"><span>OFF-SCREEN INTERESTS</span><span>✳</span></div><img src="assets/img/Mahiru.jfif" alt="Mahiru Shiina, a favorite anime character" loading="lazy" /><div class="art-bottom"><strong>Anime, manga & manhwa</strong><span>A little inspiration beyond the screen.</span></div></div>
+            <div class="art-sticker" aria-hidden="true"><span>CREATE</span><span>·</span><span>LEARN</span><span>·</span><span>REPEAT</span></div>
+          </div>
+          <div class="about-copy reveal">
+            <div class="about-copy-top"><span class="number-label">01 — ABOUT ME</span><span class="mini-line"></span></div>
+            <h3>Learning today.<br />Building for tomorrow.</h3>
+            <p>I’m <strong>Habibunayka Miftah Al-Rizqi</strong>, a Software Engineering (RPL) student at <strong>SMKN 1 Cibinong</strong>. I’m passionate about web development and programming, and enjoy exploring how thoughtful design and solid code can work together.</p>
+            <p>My current toolkit includes PHP, JavaScript, Laravel, React, and MySQL. I’m committed to continuous learning, enjoy working on tech projects, and often find inspiration in manga and manhwa.</p>
+            <div class="about-facts"><div><strong>01</strong><span>Curious<br />mindset</span></div><div><strong>05+</strong><span>Tech areas<br />explored</span></div><div><strong>∞</strong><span>Things to<br />learn</span></div></div>
+            <a class="text-link" href="#contact">Have a project in mind? <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <!-- <div id="project-modal" class="modal">
-                <div class="modal-content">
-                    <span class="close-btn">&times;</span>
-                    <iframe id="project-iframe" src="" frameborder="0"></iframe>
-                </div>
-            </div> -->
+    <section class="section section-projects" id="projects">
+      <div class="container">
+        <div class="section-heading section-heading-row reveal"><div><span class="section-kicker">SELECTED EXPLORATIONS</span><h2>Things I’ve been<br /><span>working on.</span></h2></div><p>A few areas I’m exploring as I grow my skills in software development.</p></div>
+        <div class="project-grid">
+          <article class="project-card project-card--blue reveal"><div class="project-card-head"><span class="project-index">01 / WEB</span><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-art art-browser" aria-hidden="true"><div class="browser-bar"><i></i><i></i><i></i><span></span></div><div class="browser-content"><div class="browser-side"></div><div class="browser-main"><b></b><b></b><div class="browser-blocks"><i></i><i></i><i></i></div></div></div></div><div class="project-meta"><span>HTML · CSS · JavaScript</span><h3>Portfolio Website</h3><p>A personal corner of the web to share my journey, interests, and growing toolkit.</p></div></article>
+          <article class="project-card project-card--lavender reveal"><div class="project-card-head"><span class="project-index">02 / FRONTEND</span><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-art art-ui" aria-hidden="true"><div class="ui-panel ui-panel--large"><span></span><span></span><span></span><div class="ui-chart"><i></i><i></i><i></i><i></i><i></i></div></div><div class="ui-panel ui-panel--small"><div></div><div></div><div></div></div></div><div class="project-meta"><span>UI · RESPONSIVE LAYOUT</span><h3>Frontend Practice</h3><p>Experiments with layout, reusable components, and interfaces for different screens.</p></div></article>
+          <article class="project-card project-card--mint reveal"><div class="project-card-head"><span class="project-index">03 / BACKEND</span><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-art art-terminal" aria-hidden="true"><div class="terminal-top"><i></i><i></i><i></i><span>terminal</span></div><div class="terminal-lines"><span><b>$</b> php artisan serve</span><span class="terminal-muted">Starting development server...</span><span><b>✓</b> Application ready</span><span class="terminal-cursor">_</span></div></div><div class="project-meta"><span>PHP · LARAVEL</span><h3>Backend Practice</h3><p>Learning server-side logic, application structure, and how web experiences work behind the scenes.</p></div></article>
+          <article class="project-card project-card--peach reveal"><div class="project-card-head"><span class="project-index">04 / DATABASE</span><span class="project-arrow" aria-hidden="true">↗</span></div><div class="project-art art-database" aria-hidden="true"><div class="db-cylinder"><div class="db-top"></div><div class="db-line"></div><div class="db-line db-line-short"></div><div class="db-line"></div></div><div class="db-chip">SQL<br /><small>DATA</small></div></div><div class="project-meta"><span>MYSQL · DATA MODELING</span><h3>Database Practice</h3><p>Exploring structured data, relationships, and the fundamentals of storing information.</p></div></article>
+        </div>
+        <p class="project-note"><span>↗</span> These are learning areas and portfolio explorations. More detailed project case studies will be added as they’re ready.</p>
+      </div>
+    </section>
 
-            <div class="skill" id="skill">
-                <svg
-                    width="71vh"
-                    height="71vh"
-                    viewBox="0 0 491 493"
-                    id="gear-icon"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M260.921 181.642C244.911 177.81 228.432 180.432 214.364 189.066C200.349 197.713 190.495 211.205 186.663 227.215C182.831 243.224 185.506 259.716 194.087 273.772C202.733 287.787 216.226 297.64 232.235 301.472C248.245 305.305 264.737 302.629 278.792 294.049C292.807 285.402 302.661 271.909 306.493 255.9C310.325 239.891 307.65 223.399 299.069 209.343C294.863 202.429 289.324 196.42 282.775 191.664C276.226 186.909 268.797 183.502 260.921 181.642ZM451.495 360.583L423.643 322.27C427.738 312.494 431.081 302.312 433.555 291.978C436.029 281.644 437.671 270.998 438.434 260.481L480.616 238.933C483.804 237.301 486.419 234.738 488.114 231.585C489.81 228.431 490.505 224.836 490.107 221.277L489.959 219.77C486.773 190.514 478.312 162.077 464.988 135.838L464.293 134.483C462.675 131.296 460.13 128.674 456.992 126.963C453.855 125.252 450.272 124.532 446.717 124.897L399.536 129.964C386.626 112.947 371.229 98.2782 353.576 86.41L356.052 38.9393C356.238 35.363 355.331 31.8148 353.452 28.7663C351.572 25.7177 348.81 23.3131 345.532 21.8718L344.15 21.258C317.513 9.55986 288.171 2.53592 259.124 0.903956L257.614 0.825606C254.038 0.626179 250.487 1.51941 247.431 3.38663C244.375 5.25386 241.959 8.00668 240.505 11.2794L221.112 54.9267C200.169 57.6164 179.803 63.6972 160.814 72.9307L120.745 46.8649C117.744 44.9204 114.222 43.9352 110.648 44.0402C107.073 44.1452 103.615 45.3354 100.734 47.4527L99.5007 48.3463C75.7658 65.7388 55.3511 87.2566 39.2306 111.873L38.4154 113.15C34.4038 119.266 34.5905 127.236 38.8832 133.189L67.0871 171.926C63.0176 181.595 59.7535 191.683 57.3182 201.856C54.8573 212.137 53.1995 222.609 52.4753 232.966L9.89483 254.758C6.70747 256.389 4.0922 258.952 2.39679 262.106C0.701378 265.26 0.00616209 268.855 0.40358 272.413L0.552215 273.921C3.79642 303.173 12.1324 331.493 25.5232 357.853L26.2178 359.208C27.8358 362.395 30.3812 365.016 33.5188 366.727C36.6564 368.438 40.2388 369.159 43.7939 368.793L91.3222 363.697C104.138 380.635 119.428 395.277 136.932 407.054L134.459 454.751C134.273 458.328 135.18 461.876 137.059 464.924C138.939 467.973 141.701 470.378 144.979 471.819L146.361 472.433C173.266 484.223 202.06 491.116 231.388 492.787L232.897 492.865C236.473 493.064 240.025 492.171 243.08 490.304C246.136 488.437 248.552 485.684 250.006 482.411L269.294 438.965C290.42 436.323 310.777 430.27 329.993 420.944L369.766 446.826C372.767 448.77 376.289 449.755 379.863 449.65C383.438 449.545 386.896 448.355 389.777 446.238L391.01 445.344C414.911 427.798 435.142 406.43 451.28 381.818L452.096 380.541C455.987 374.453 455.788 366.536 451.495 360.583ZM224.045 335.687C172.054 323.241 140.003 271.015 152.449 219.024C164.894 167.034 217.12 134.982 269.111 147.428C321.102 159.874 353.153 212.1 340.707 264.09C328.262 316.081 276.036 348.132 224.045 335.687Z"
-                        fill="#3ca1ff"
-                    />
-                </svg>
+    <section class="section section-skills" id="skills">
+      <div class="container skills-layout">
+        <div class="section-heading reveal"><span class="section-kicker">TOOLS IN MY TOOLBOX</span><h2>Skills I’m<br /><span>growing.</span></h2><p>I’m building a strong foundation and improving with every project and lesson.</p><div class="skills-aside-mark" aria-hidden="true">{ }</div></div>
+        <div class="skills-list reveal">
+          <div class="skill-row"><div class="skill-top"><div class="skill-symbol symbol-blue">&lt;/&gt;</div><div class="skill-name"><h3>Web Development</h3><p>Backend & frontend</p></div><span class="skill-level-label">Developing</span></div><div class="skill-track"><span style="--skill-width: 46%"></span></div></div>
+          <div class="skill-row"><div class="skill-top"><div class="skill-symbol symbol-purple">JS</div><div class="skill-name"><h3>Programming</h3><p>JavaScript, PHP, Java</p></div><span class="skill-level-label">Developing</span></div><div class="skill-track"><span style="--skill-width: 40%"></span></div></div>
+          <div class="skill-row"><div class="skill-top"><div class="skill-symbol symbol-green">✳</div><div class="skill-name"><h3>Frameworks</h3><p>Laravel & React</p></div><span class="skill-level-label">Developing</span></div><div class="skill-track"><span style="--skill-width: 35%"></span></div></div>
+          <div class="skill-row"><div class="skill-top"><div class="skill-symbol symbol-orange">▤</div><div class="skill-name"><h3>Database</h3><p>MySQL</p></div><span class="skill-level-label">Intermediate</span></div><div class="skill-track"><span style="--skill-width: 55%"></span></div></div>
+        </div>
+      </div>
+    </section>
 
-                <div class="skill-header">
-                    <h1 class="skill-title">My Skill</h1>
-                    <div class="skill-strip"></div>
-                </div>
-                <div class="skill-body">
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-icon">
-                                <svg
-                                    width="6vh"
-                                    height="6vh"
-                                    viewBox="0 0 38 36"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M3.96222 11.9802H33.7436M20.4203 18.25H26.6901M20.4203 24.5197H23.5552M11.0157 7.27791H11.0298M17.2854 7.27791H17.2996M14.1506 11.9802V31.5732M3.96222 16.6825C3.96222 9.66355 3.96222 6.15248 6.14253 3.97218C8.32283 1.79187 11.8323 1.79187 18.8529 1.79187C25.8719 1.79187 29.3829 1.79187 31.5632 3.97218C33.7436 6.15248 33.7436 9.66198 33.7436 16.6825C33.7436 23.7015 33.7436 27.2126 31.5632 29.3929C29.3829 31.5732 25.8734 31.5732 18.8529 31.5732C11.8339 31.5732 8.32283 31.5732 6.14253 29.3929C3.96222 27.2126 3.96222 23.7031 3.96222 16.6825Z"
-                                        stroke="#F8F8F8"
-                                        stroke-width="3.25"
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        shape-rendering="crispEdges"
-                                    />
-                                </svg>
-                            </span>
-                            <h3 class="skill-name">
-                                Web Development (Backend, Frontend)
-                            </h3>
-                            <span class="skill-value">Pre-Intermediete</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div
-                                class="skill-level skill-level-hidden"
-                                style="width: 46%"
-                            ></div>
-                        </div>
-                    </div>
+    <section class="section section-education" id="education">
+      <div class="container">
+        <div class="section-heading reveal"><span class="section-kicker">MY LEARNING JOURNEY</span><h2>Education & <span>growth.</span></h2><p>Every step has helped shape the way I learn and think.</p></div>
+        <div class="education-timeline">
+          <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-date">2014 — 2020</div><div class="timeline-card"><span class="timeline-count">01</span><h3>Elementary School</h3><p>SDIT Misbahussudur</p><span class="timeline-detail">Built the foundation through reading, writing, and counting, while developing the habits that support my learning today.</span></div></article>
+          <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-date">2020 — 2023</div><div class="timeline-card"><span class="timeline-count">02</span><h3>Junior High School</h3><p>SMPN 2 Cibinong</p><span class="timeline-detail">Explored a wider range of subjects, including science, mathematics, and foreign languages.</span></div></article>
+          <article class="timeline-item reveal"><div class="timeline-dot"></div><div class="timeline-date">2023 — PRESENT</div><div class="timeline-card timeline-card-current"><span class="timeline-count">03</span><span class="current-badge"><i></i> CURRENT</span><h3>Software Engineering (RPL)</h3><p>SMKN 1 Cibinong</p><span class="timeline-detail">Developing programming and software skills, building a stronger technical foundation, and preparing for a future in technology.</span></div></article>
+        </div>
+      </div>
+    </section>
 
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-icon">
-                                <svg
-                                    width="6vh"
-                                    height="6vh"
-                                    viewBox="0 0 39 39"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M24.7205 23.2722L21.6716 26.3211L23.3432 27.9809L28.0519 23.2722L23.3432 18.5635L21.6716 20.2233L24.7205 23.2722ZM14.9028 23.2722L17.9517 20.2233L16.2801 18.5635L11.5714 23.2722L16.2801 27.9809L17.9517 26.3211L14.9028 23.2722Z"
-                                        fill="white"
-                                    />
-                                    <path
-                                        d="M11.5714 11.5004C12.2215 11.5004 12.7486 10.9733 12.7486 10.3232C12.7486 9.67304 12.2215 9.146 11.5714 9.146C10.9212 9.146 10.3942 9.67304 10.3942 10.3232C10.3942 10.9733 10.9212 11.5004 11.5714 11.5004Z"
-                                        fill="white"
-                                    />
-                                    <path
-                                        d="M8.03982 11.5004C8.68996 11.5004 9.217 10.9733 9.217 10.3232C9.217 9.67304 8.68996 9.146 8.03982 9.146C7.38968 9.146 6.86264 9.67304 6.86264 10.3232C6.86264 10.9733 7.38968 11.5004 8.03982 11.5004Z"
-                                        fill="white"
-                                    />
-                                    <path
-                                        d="M33.9378 5.6145H5.68548C4.38705 5.6145 3.33112 6.67161 3.33112 7.96886V31.5125C3.33112 32.8109 4.38705 33.8668 5.68548 33.8668H33.9378C35.2362 33.8668 36.2922 32.8109 36.2922 31.5125V7.96886C36.2922 6.67161 35.2362 5.6145 33.9378 5.6145ZM33.9378 7.96886V12.6776H5.68548V7.96886H33.9378ZM5.68548 31.5125V15.0319H33.9378V31.5125H5.68548Z"
-                                        fill="white"
-                                    />
-                                </svg>
-                            </span>
-                            <h3 class="skill-name">
-                                Programming (Javascript, PHP, Java)
-                            </h3>
-                            <span class="skill-value">Pre-Intermediete</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div
-                                class="skill-level skill-level-hidden"
-                                style="width: 40%"
-                            ></div>
-                        </div>
-                    </div>
+    <section class="section section-contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-intro reveal"><span class="section-kicker">HAVE A QUESTION OR IDEA?</span><h2>Let’s make<br /><span>something good.</span></h2><p>Want to talk about technology, share an idea, or just say hello? My inbox is open.</p><div class="contact-direct"><span class="contact-direct-icon">↗</span><div><small>CONNECT WITH ME</small><a href="mailto:habibunayka@gmail.com">habibunayka@gmail.com</a></div></div><div class="contact-socials"><a href="https://github.com/habibunayka" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a><a href="https://www.instagram.com/habib.yet" target="_blank" rel="noopener noreferrer">Instagram <span>↗</span></a></div></div>
+        <div class="contact-form-wrap reveal"><div class="form-heading"><div><span class="section-kicker">SEND A MESSAGE</span><h3>Drop me a line.</h3></div><span class="form-decoration" aria-hidden="true">✳</span></div>
+          <form id="contact-form" method="POST">
+            <div class="form-field"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name" placeholder="e.g. Alex Smith" required maxlength="120" /></div>
+            <div class="form-field"><label for="email">Email address</label><input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required maxlength="254" /></div>
+            <div class="form-field"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell me a little about it..." rows="4" required maxlength="3000"></textarea></div>
+            <button class="button button-primary form-submit" type="submit">Send message <span aria-hidden="true">↗</span></button>
+            <p class="form-hint">Your message will be sent through the contact form service.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-icon">
-                                <svg
-                                    width="6vh"
-                                    height="6vh"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0ZM16 8L12 4L8 8H11V16H13V8H16ZM11 17H13V19H11V17Z"
-                                        fill="white"
-                                    />
-                                </svg>
-                            </span>
-                            <h3 class="skill-name">
-                                Frameworks (Laravel, React)
-                            </h3>
-                            <span class="skill-value">Pre-Intermediete</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div
-                                class="skill-level skill-level-hidden"
-                                style="width: 32%"
-                            ></div>
-                        </div>
-                    </div>
+  <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#home">H<span>.</span></a><p>Designed & built with curiosity by <strong>Habibunayka Miftah Al-Rizqi</strong></p><a class="back-top" href="#home">BACK TO TOP ↑</a><small class="copyright">© <span id="year">2026</span> Habibunayka Miftah Al-Rizqi. All rights reserved.</small></div></footer>
 
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span class="skill-icon">
-                                <svg
-                                    width="6vh"
-                                    height="6vh"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M12 2C7.027 2 3 3.2 3 4.5V19.5C3 20.8 7.027 22 12 22C16.973 22 21 20.8 21 19.5V4.5C21 3.2 16.973 2 12 2ZM5 10.658C6.754 11.421 9.29 12 12 12C14.71 12 17.246 11.421 19 10.658V14.894C17.246 15.657 14.71 16.236 12 16.236C9.29 16.236 6.754 15.657 5 14.894V10.658ZM12 4C15.71 4 18.75 4.843 19 5.322C18.75 5.801 15.71 6.644 12 6.644C8.29 6.644 5.25 5.801 5 5.322C5.25 4.843 8.29 4 12 4ZM12 18C9.29 18 6.754 17.421 5 16.658V18.5C5 19.328 8.134 20 12 20C15.866 20 19 19.328 19 18.5V16.658C17.246 17.421 14.71 18 12 18Z"
-                                        fill="white"
-                                    />
-                                </svg>
-                            </span>
-                            <h3 class="skill-name">Database (MySQL)</h3>
-                            <span class="skill-value">Intermediete</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div
-                                class="skill-level skill-level-hidden"
-                                style="width: 52%"
-                            ></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="notification" role="status" aria-live="polite" aria-atomic="true" hidden><div class="notification-content"><strong id="notification-title">Message</strong><p id="notification-message"></p><button class="notification-close" type="button" aria-label="Dismiss notification">×</button></div></div>
 
-            <div class="education" id="education">
-                <div class="education-header">
-                    <h1 class="education-title">My Education</h1>
-                    <div class="education-strip"></div>
-                </div>
-                <div class="education-body">
-                    <div class="education-container education-left">
-                        <div class="education-content">
-                            <h2>2014 - 2020</h2>
-                            <p>
-                                Elementary School at <b>SDIT Misbahussudur.</b>
-                                Here, the basics of education such as reading,
-                                writing, and counting were taught and became the
-                                foundation for the next level of education.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="education-container education-right">
-                        <div class="education-content">
-                            <h2>2020 - 2023</h2>
-                            <p>
-                                Junior high school at <b>SMPN 2 Cibinong.</b> A
-                                period of learning filled with the introduction
-                                of more complex subjects, such as science,
-                                mathematics, and foreign languages.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="education-container education-left">
-                        <div class="education-content">
-                            <h2>2023 - Present</h2>
-                            <p>
-                                Senior high school at
-                                <b>SMKN 1 Cibinong,</b> majoring in Software
-                                Engineering (RPL). Started delving into the
-                                field of technology and preparing for a future
-                                career.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact" id="contact">
-                <div class="contact-header">
-                    <div class="contact-title">Contact Me</div>
-                    <div class="contact-strip"></div>
-                </div>
-                <form id="contact-form" method="POST">
-                    <label for="name">Name :</label>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        spellcheck="false"
-                        placeholder="Your Name"
-                    />
-
-                    <label for="email">Email :</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        spellcheck="false"
-                        placeholder="Your Email"
-                    />
-
-                    <label for="message">Message :</label>
-                    <textarea
-                        id="message"
-                        class="message-input"
-                        spellcheck="false"
-                        name="message"
-                        placeholder="Your Message"
-                    ></textarea>
-
-                    <button type="submit reset">Submit</button>
-                </form>
-
-                <footer>
-                    <p>
-                        &copy; 2024 Habibunayka Miftah Al-Rizqi. All rights
-                        reserved.
-                    </p>
-                </footer>
-            </div>
-
-            <div class="notification">
-                <div class="notification-content">
-                    <p id="notification-title">Title</p>
-                    <p id="notification-message">Message</p>
-                </div>
-            </div>
-        </main>
-        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        <script src="styles/js/script.js"></script>
-        <script src="styles/js/send_email.js"></script>
-    </body>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="styles/js/script.js" defer></script>
+  <script src="styles/js/send_email.js" defer></script>
+</body>
 </html>
